@@ -6,37 +6,10 @@
   <title>Application</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=fallback" rel="stylesheet">
 </head>
 <body>
-  <div class="app" id="app">
-    <header class="header">
-      <section class="header-top">
-        <span class="mistake-counter">
-          Ошибок: <span id="mistake-count"></span>
-        </span>
-        <button class="hint-button" id="hint" title="Подсказка"></button>
-      </section>
-      <section class="header-bottom">
-        <span class="recipe-name" id="recipe-name"></span>
-      </section>
-    </header>
-    <main class="content">
-      <div class="recipe-wrapper">
-        <div class="dish-wrapper">
-          <img id="dish-state" src="./images/tech/dish.svg" hidden>
-        </div>
-      </div>
-      <div class="recipe-list" id="recipe-list-wrapper">
-        <ol id="recipe-list"></ol>
-      </div>
-    </main>
-    <footer class="conveyor-wrapper">
-      <div class="conveyor" id="conveyor">
-        <div class="conveyor-lent" id="conveyor-lent"></div>
-      </div>
-    </footer>
-  </div>
+  <div id="app"></div>
   <script src="build.js"></script>
 </body>
 </html>
